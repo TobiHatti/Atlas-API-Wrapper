@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AtlasWrapper", "AtlasWrapper\AtlasWrapper.vbproj", "{E6F86788-E84A-45D5-B017-5919B660B9EA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AtlasWrapperTester", "AtlasWrapperTester\AtlasWrapperTester.vbproj", "{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6F86788-E84A-45D5-B017-5919B660B9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6F86788-E84A-45D5-B017-5919B660B9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6F86788-E84A-45D5-B017-5919B660B9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6F86788-E84A-45D5-B017-5919B660B9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {905EBC09-94BD-41E1-8721-DF789120E403}
+	EndGlobalSection
+EndGlobal

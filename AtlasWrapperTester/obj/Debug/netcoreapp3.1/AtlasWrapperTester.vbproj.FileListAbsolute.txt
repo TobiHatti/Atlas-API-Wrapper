@@ -1,0 +1,11 @@
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperTester.exe
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperTester.deps.json
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperTester.runtimeconfig.json
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperTester.runtimeconfig.dev.json
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperTester.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperTester.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperTester.vbprojAssemblyReference.cache
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperTester.AssemblyInfoInputs.cache
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperTester.AssemblyInfo.vb
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperTester.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperTester.pdb
