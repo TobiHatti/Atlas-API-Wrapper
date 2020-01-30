@@ -74,5 +74,19 @@ Public Class AtlasWrapper
     Public Function PositionsExtended() As Object
         Return GetApiResponse($"{hostname}/{username}/positionsextended")
     End Function
+    Public Function History(pIMEI As Long, pFromTS As Date, pToTS As Date) As Object
+        If Not DatesValid(pFromTS, pToTS) Then Return Nothing
+        Return GetApiResponse($"{hostname}/{username}/history/{pIMEI}/{CType(pFromTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}/{CType(pToTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}")
+    End Function
+    Public Function History(pIMEI As Long, pLastReceivedTS As Date) As Object
+        Return History(pIMEI, pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
+    End Function
+    Public Function HistoryExtended(pIMEI As Long, pFromTS As Date, pToTS As Date) As Object
+        If Not DatesValid(pFromTS, pToTS) Then Return Nothing
+        Return GetApiResponse($"{hostname}/{username}/historyextended/{pIMEI}/{CType(pFromTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}/{CType(pToTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}")
+    End Function
+    Public Function HistoryExtended(pIMEI As Long, pLastReceivedTS As Date) As Object
+        Return HistoryExtended(pIMEI, pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
+    End Function
 #End Region
 End Class
