@@ -104,4 +104,29 @@ Public Class AtlasWrapper
         Return Refueling(pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
     End Function
 #End Region
+
+#Region "[PUBLIC METHODS / CUSTOM API CALLS]"
+    Public Function CustomRequest(pHostnameAndRequest As String) As Object
+        Return GetApiResponse(pHostnameAndRequest)
+    End Function
+    Public Shared Function CustomRequest(pHostnameAndRequest As String, pPassword As String) As Object
+        Try
+            Using webClient As WebClient = New WebClient()
+                Return JsonConvert.DeserializeObject(
+                    Encoding.UTF8.GetString(
+                    webClient.UploadValues(pHostnameAndRequest,
+                    New Specialized.NameValueCollection From {{"password", pPassword}})))
+            End Using
+        Catch wex As WebException
+            Dim errorCode As HttpStatusCode = CType(wex.Response, HttpWebResponse).StatusCode
+            If errorCode = HttpStatusCode.OK OrElse errorCode = HttpStatusCode.NotFound Then
+                Return Nothing
+            Else
+                Return "e-" + CType(errorCode, Integer).ToString()
+            End If
+        Catch ex As Exception
+            Return -1
+        End Try
+    End Function
+#End Region
 End Class
