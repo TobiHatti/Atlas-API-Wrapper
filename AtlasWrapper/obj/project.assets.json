@@ -226,11 +226,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapper\\AtlasWrapper.vbproj",
+      "projectUniqueName": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapper\\AtlasWrapper.vbproj",
       "projectName": "AtlasWrapper",
-      "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapper\\AtlasWrapper.vbproj",
+      "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapper\\AtlasWrapper.vbproj",
       "packagesPath": "C:\\Users\\zivi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapper\\obj\\",
+      "outputPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

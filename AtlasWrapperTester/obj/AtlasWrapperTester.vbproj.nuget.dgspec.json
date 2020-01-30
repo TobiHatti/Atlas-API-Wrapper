@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj": {}
+    "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj": {
+    "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj",
+        "projectUniqueName": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj",
         "projectName": "AtlasWrapperTester",
-        "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj",
+        "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj",
         "packagesPath": "C:\\Users\\zivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AtlasWrapper\\AtlasWrapperTester\\obj\\",
+        "outputPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
