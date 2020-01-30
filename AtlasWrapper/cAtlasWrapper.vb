@@ -28,7 +28,7 @@ Public Class AtlasWrapper
         Me.password = pPassword
     End Sub
 
-
+#Region "[PRIVATE METHODS]"
     Private Function GetApiResponse(pApiUrl As String) As Object
         Try
             Using webClient As WebClient = New WebClient()
@@ -48,7 +48,6 @@ Public Class AtlasWrapper
             Return -1
         End Try
     End Function
-
     Private Function DatesValid(pFromTS As Date, pToTS As Date) As Boolean
         If New Date(pFromTS.Year, pFromTS.Month, pFromTS.Day, pFromTS.Hour, pFromTS.Minute, pFromTS.Second) = New Date(pToTS.Year, pToTS.Month, pToTS.Day, pToTS.Hour, pToTS.Minute, pToTS.Second) OrElse pFromTS > Date.Now OrElse pFromTS > pToTS Then
             Return False
@@ -56,18 +55,24 @@ Public Class AtlasWrapper
             Return True
         End If
     End Function
+#End Region
 
+#Region "[PUBLIC METHODS / API CALLS]"
     Public Function Devices(Optional pRegistrationAsName As Integer = 0) As Object
         Return GetApiResponse($"{hostname}/{username}/devices?registrationAsName={pRegistrationAsName}")
     End Function
-
     Public Function Ignitions(pFromTS As Date, pToTS As Date) As Object
         If Not DatesValid(pFromTS, pToTS) Then Return Nothing
         Return GetApiResponse($"{hostname}/{username}/ignitions/{pFromTS.ToString("yyyy-MM-dd HH:mm:ss")}/{pToTS.ToString("yyyy-MM-dd HH:mm:ss")}/")
     End Function
-
     Public Function Ignitions(pLastReceivedTS As Date) As Object
         Return Ignitions(pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
     End Function
-
+    Public Function Positions() As Object
+        Return GetApiResponse($"{hostname}/{username}/positions")
+    End Function
+    Public Function PositionsExtended() As Object
+        Return GetApiResponse($"{hostname}/{username}/positionsextended")
+    End Function
+#End Region
 End Class
