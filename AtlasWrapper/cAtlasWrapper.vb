@@ -49,7 +49,25 @@ Public Class AtlasWrapper
         End Try
     End Function
 
+    Private Function DatesValid(pFromTS As Date, pToTS As Date) As Boolean
+        If New Date(pFromTS.Year, pFromTS.Month, pFromTS.Day, pFromTS.Hour, pFromTS.Minute, pFromTS.Second) = New Date(pToTS.Year, pToTS.Month, pToTS.Day, pToTS.Hour, pToTS.Minute, pToTS.Second) OrElse pFromTS > Date.Now OrElse pFromTS > pToTS Then
+            Return False
+        Else
+            Return True
+        End If
+    End Function
+
     Public Function Devices(Optional pRegistrationAsName As Integer = 0) As Object
         Return GetApiResponse($"{hostname}/{username}/devices?registrationAsName={pRegistrationAsName}")
     End Function
+
+    Public Function Ignitions(pFromTS As Date, pToTS As Date) As Object
+        If Not DatesValid(pFromTS, pToTS) Then Return Nothing
+        Return GetApiResponse($"{hostname}/{username}/ignitions/{pFromTS.ToString("yyyy-MM-dd HH:mm:ss")}/{pToTS.ToString("yyyy-MM-dd HH:mm:ss")}/")
+    End Function
+
+    Public Function Ignitions(pLastReceivedTS As Date) As Object
+        Return Ignitions(pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
+    End Function
+
 End Class
