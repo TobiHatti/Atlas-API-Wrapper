@@ -97,5 +97,11 @@ Public Class AtlasWrapper
     Public Function Drivers() As Object
         Return GetApiResponse($"{hostname}/{username}/drivers")
     End Function
+    Public Function Refueling(pFromTS As Date, pToTS As Date) As Object
+        Return GetApiResponse($"{hostname}/{username}/refueling/{pFromTS.ToString("yyyy-MM-dd HH:mm:ss")}/{pToTS.ToString("yyyy-MM-dd HH:mm:ss")}")
+    End Function
+    Public Function Refueling(pLastReceivedTS As Date) As Object
+        Return Refueling(pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
+    End Function
 #End Region
 End Class
