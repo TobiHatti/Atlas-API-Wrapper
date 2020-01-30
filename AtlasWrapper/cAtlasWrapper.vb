@@ -94,5 +94,8 @@ Public Class AtlasWrapper
     Public Function TotalHistoryExtended(pFromTS As Long, Optional pLimit As Integer = 100) As Object
         Return GetApiResponse($"{hostname}/{username}/totalhistoryextended/{pFromTS}/?limit={pLimit}")
     End Function
+    Public Function Drivers() As Object
+        Return GetApiResponse($"{hostname}/{username}/drivers")
+    End Function
 #End Region
 End Class
