@@ -88,5 +88,11 @@ Public Class AtlasWrapper
     Public Function HistoryExtended(pIMEI As Long, pLastReceivedTS As Date) As Object
         Return HistoryExtended(pIMEI, pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
     End Function
+    Public Function TotalHistory(pFromTS As Long, Optional pLimit As Integer = 100) As Object
+        Return GetApiResponse($"{hostname}/{username}/totalhistory/{pFromTS}/?limit={pLimit}")
+    End Function
+    Public Function TotalHistoryExtended(pFromTS As Long, Optional pLimit As Integer = 100) As Object
+        Return GetApiResponse($"{hostname}/{username}/totalhistoryextended/{pFromTS}/?limit={pLimit}")
+    End Function
 #End Region
 End Class

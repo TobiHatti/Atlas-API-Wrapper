@@ -6,3 +6,11 @@ C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapper\obj\Debug\netstan
 C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapper\bin\Debug\netstandard2.0\AtlasWrapper.pdb
 C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.dll
 C:\Users\zivi\Desktop\Projects (GIT)\AtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\bin\Debug\netstandard2.0\AtlasWrapper.deps.json
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\bin\Debug\netstandard2.0\AtlasWrapper.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\bin\Debug\netstandard2.0\AtlasWrapper.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.vbprojAssemblyReference.cache
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.AssemblyInfoInputs.cache
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.AssemblyInfo.vb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.pdb
