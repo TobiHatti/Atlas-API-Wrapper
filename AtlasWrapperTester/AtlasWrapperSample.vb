@@ -1,6 +1,6 @@
 Imports System
 
-Module Program
+Module AtlasWrapperSample
     Sub Main()
 
     End Sub

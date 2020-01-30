@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj",
-      "projectName": "AtlasWrapperTester",
-      "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperTester.vbproj",
+      "projectUniqueName": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperSample.vbproj",
+      "projectName": "AtlasWrapperSample",
+      "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperSample.vbproj",
       "packagesPath": "C:\\Users\\zivi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\obj\\",
       "projectStyle": "PackageReference",

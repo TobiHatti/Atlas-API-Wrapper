@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AtlasWrapper", "AtlasWrapper\AtlasWrapper.vbproj", "{E6F86788-E84A-45D5-B017-5919B660B9EA}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AtlasWrapper", "AtlasWrapper\AtlasWrapper.vbproj", "{E6F86788-E84A-45D5-B017-5919B660B9EA}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AtlasWrapperTester", "AtlasWrapperTester\AtlasWrapperTester.vbproj", "{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AtlasWrapperSample", "AtlasWrapperTester\AtlasWrapperSample.vbproj", "{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
