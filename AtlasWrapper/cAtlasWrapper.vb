@@ -58,57 +58,149 @@ Public Class AtlasWrapper
 #End Region
 
 #Region "[PUBLIC METHODS / API CALLS]"
+    ''' <summary>
+    ''' Retrieves the list of vehicles
+    ''' </summary>
+    ''' <param name="pRegistrationAsName">For the value 1 in the "deviceName" field, there will be returned a registration number</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function Devices(Optional pRegistrationAsName As Integer = 0) As Object
         Return GetApiResponse($"{hostname}/{username}/devices?registrationAsName={pRegistrationAsName}")
     End Function
+    ''' <summary>
+    ''' Retrieves vehicle ignitions
+    ''' </summary>
+    ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data</param>
+    ''' <param name="pToTS">The end of the period for which the service has to return the data</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function Ignitions(pFromTS As Date, pToTS As Date) As Object
         If Not DatesValid(pFromTS, pToTS) Then Return Nothing
         Return GetApiResponse($"{hostname}/{username}/ignitions/{pFromTS.ToString("yyyy-MM-dd HH:mm:ss")}/{pToTS.ToString("yyyy-MM-dd HH:mm:ss")}/")
     End Function
+    ''' <summary>
+    ''' Retrieves vehicle ignitions, starting from the supplied timestamp (pLastReceivedTS) 
+    ''' until the predefined range defined in FetchSpan
+    ''' </summary>
+    ''' <param name="pLastReceivedTS">Time at which the last package was received</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function Ignitions(pLastReceivedTS As Date) As Object
         Return Ignitions(pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
     End Function
+    ''' <summary>
+    ''' Retrieves all vehicle positions
+    ''' </summary>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function Positions() As Object
         Return GetApiResponse($"{hostname}/{username}/positions")
     End Function
+    ''' <summary>
+    ''' Retrieves all vehicle positions (extended version)
+    ''' </summary>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function PositionsExtended() As Object
         Return GetApiResponse($"{hostname}/{username}/positionsextended")
     End Function
+    ''' <summary>
+    ''' Retrieves a single vehicles location history
+    ''' </summary>
+    ''' <param name="pIMEI">The vehicle IMEI which concerns query</param>
+    ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data</param>
+    ''' <param name="pToTS">The end of the period for which the service has to return the data</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function History(pIMEI As Long, pFromTS As Date, pToTS As Date) As Object
         If Not DatesValid(pFromTS, pToTS) Then Return Nothing
         Return GetApiResponse($"{hostname}/{username}/history/{pIMEI}/{CType(pFromTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}/{CType(pToTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}")
     End Function
+    ''' <summary>
+    ''' Retrieves a single vehicles location history, starting from the supplied timestamp (pLastReceivedTS) 
+    ''' until the predefined range defined in FetchSpan
+    ''' </summary>
+    ''' <param name="pIMEI">The vehicle IMEI which concerns query</param>
+    ''' <param name="pLastReceivedTS">Time at which the last package was received</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function History(pIMEI As Long, pLastReceivedTS As Date) As Object
         Return History(pIMEI, pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
     End Function
+    ''' <summary>
+    ''' Retrieves a single vehicles location history (extended version)
+    ''' </summary>
+    ''' <param name="pIMEI">The vehicle IMEI which concerns query</param>
+    ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data</param>
+    ''' <param name="pToTS">The end of the period for which the service has to return the data</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function HistoryExtended(pIMEI As Long, pFromTS As Date, pToTS As Date) As Object
         If Not DatesValid(pFromTS, pToTS) Then Return Nothing
         Return GetApiResponse($"{hostname}/{username}/historyextended/{pIMEI}/{CType(pFromTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}/{CType(pToTS.Subtract(New DateTime(1970, 1, 1)).TotalSeconds, Integer)}")
     End Function
+    ''' <summary>
+    ''' Retrieves a single vehicles location history (extended version), starting from the supplied timestamp (pLastReceivedTS) 
+    ''' until the predefined range defined in FetchSpan
+    ''' </summary>
+    ''' <param name="pIMEI">The vehicle IMEI which concerns query</param>
+    ''' <param name="pLastReceivedTS">Time at which the last package was received</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function HistoryExtended(pIMEI As Long, pLastReceivedTS As Date) As Object
         Return HistoryExtended(pIMEI, pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
     End Function
+    ''' <summary>
+    ''' Retrieves the history of vehicle locations (for all vehicles)
+    ''' </summary>
+    ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data. Time as unix-timestamp expressed in microseconds</param>
+    ''' <param name="pLimit">Limit of results, by default 100, up to 1000</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function TotalHistory(pFromTS As Long, Optional pLimit As Integer = 100) As Object
         Return GetApiResponse($"{hostname}/{username}/totalhistory/{pFromTS}/?limit={pLimit}")
     End Function
+    ''' <summary>
+    ''' Retrieves the history of vehicle locations (for all vehicles, extended version)
+    ''' </summary>
+    ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data. Time as unix-timestamp expressed in microseconds</param>
+    ''' <param name="pLimit">Limit of results, by default 100, up to 1000</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function TotalHistoryExtended(pFromTS As Long, Optional pLimit As Integer = 100) As Object
         Return GetApiResponse($"{hostname}/{username}/totalhistoryextended/{pFromTS}/?limit={pLimit}")
     End Function
+    ''' <summary>
+    ''' Retrieves the list of drivers
+    ''' </summary>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function Drivers() As Object
         Return GetApiResponse($"{hostname}/{username}/drivers")
     End Function
+    ''' <summary>
+    ''' Retrieves the list of refuelings.
+    ''' </summary>
+    ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data</param>
+    ''' <param name="pToTS">The end of the period for which the service has to return the data</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function Refueling(pFromTS As Date, pToTS As Date) As Object
         Return GetApiResponse($"{hostname}/{username}/refueling/{pFromTS.ToString("yyyy-MM-dd HH:mm:ss")}/{pToTS.ToString("yyyy-MM-dd HH:mm:ss")}")
     End Function
+    ''' <summary>
+    ''' Retrieves the list of refuelings, starting from the supplied timestamp (pLastReceivedTS) 
+    ''' until the predefined range defined in FetchSpan
+    ''' </summary>
+    ''' <param name="pLastReceivedTS">Time at which the last package was received</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function Refueling(pLastReceivedTS As Date) As Object
         Return Refueling(pLastReceivedTS, pLastReceivedTS.Add(FetchSpan))
     End Function
 #End Region
 
 #Region "[PUBLIC METHODS / CUSTOM API CALLS]"
+    ''' <summary>
+    ''' Retrieves data from a custom request
+    ''' </summary>
+    ''' <param name="pHostnameAndRequest">Hostname and Request for the API, also includes the username</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Function CustomRequest(pHostnameAndRequest As String) As Object
         Return GetApiResponse(pHostnameAndRequest)
     End Function
+    ''' <summary>
+    ''' Retrieves data from a custom request
+    ''' </summary>
+    ''' <param name="pHostnameAndRequest">Hostname and Request for the API, also includes the username</param>
+    ''' <param name="pPassword">API Password</param>
+    ''' <returns>Dynamic object of the requested data</returns>
     Public Shared Function CustomRequest(pHostnameAndRequest As String, pPassword As String) As Object
         Try
             Using webClient As WebClient = New WebClient()
