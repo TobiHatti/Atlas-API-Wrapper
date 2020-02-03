@@ -1,0 +1,15 @@
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperSample.exe
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperSample.deps.json
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperSample.runtimeconfig.json
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperSample.runtimeconfig.dev.json
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperSample.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapperSample.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.vbprojAssemblyReference.cache
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.AssemblyInfoInputs.cache
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.AssemblyInfo.vb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapper.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapper.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.vbproj.CopyComplete
