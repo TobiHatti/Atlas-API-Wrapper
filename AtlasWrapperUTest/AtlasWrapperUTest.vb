@@ -183,4 +183,92 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
         If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
     End Sub
 #End Region
+#Region "[TEST-METHOD : History-Extended]"
+    <TestMethod()> Public Sub HistoryExtended_OVRLD1_DefaultUseCase_DateRange0H_ValidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(ValidIMEI, DateTime.Now, DateTime.Now)
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD1_DefaultUseCase_DateRange3H_ValidIMEI_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(ValidIMEI, DateTime.Now.AddHours(-3), DateTime.Now)
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD1_DefaultUseCase_DateRange24H_ValidIMEI_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(ValidIMEI, DateTime.Now.AddHours(-24), DateTime.Now)
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD2_DefaultUseCase_AllPast_ValidIMEI_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(ValidIMEI, DateTime.Now.AddHours(-5))
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD2_DefaultUseCase_AllFuture_ValidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(ValidIMEI, DateTime.Now.AddHours(5))
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD2_DefaultUseCase_PastAndFuture_ValidIMEI_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        fetcher.FetchSpan = New TimeSpan(10, 0, 0)
+        Dim result = fetcher.HistoryExtended(ValidIMEI, DateTime.Now.AddHours(-5))
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD1_DefaultUseCase_DateRange0H_InvalidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(InvalidIMEI, DateTime.Now, DateTime.Now)
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD1_DefaultUseCase_DateRange3H_InvalidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(InvalidIMEI, DateTime.Now.AddHours(-3), DateTime.Now)
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD1_DefaultUseCase_DateRange24H_InvalidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(InvalidIMEI, DateTime.Now.AddHours(-24), DateTime.Now)
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD2_DefaultUseCase_AllPast_InvalidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(InvalidIMEI, DateTime.Now.AddHours(-5))
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD2_DefaultUseCase_AllFuture_InvalidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.HistoryExtended(InvalidIMEI, DateTime.Now.AddHours(5))
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub HistoryExtended_OVRLD2_DefaultUseCase_PastAndFuture_InvalidIMEI_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        fetcher.FetchSpan = New TimeSpan(10, 0, 0)
+        Dim result = fetcher.HistoryExtended(InvalidIMEI, DateTime.Now.AddHours(-5))
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+#End Region
 End Class
