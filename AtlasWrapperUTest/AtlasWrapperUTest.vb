@@ -75,4 +75,20 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
         If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
     End Sub
 #End Region
+#Region "[TEST-METHOD : Positions]"
+    <TestMethod()> Public Sub Positions_OVRLD1_DefaultUseCase_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Positions()
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub PositionsExtended_OVRLD1_DefaultUseCase_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.PositionsExtended()
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+#End Region
 End Class
