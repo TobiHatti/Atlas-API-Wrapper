@@ -1,0 +1,11 @@
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Release\AtlasWrapperSampleCS.exe.config
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Release\AtlasWrapperSampleCS.exe
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Release\AtlasWrapperSampleCS.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Release\AtlasWrapper.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Release\Newtonsoft.Json.dll
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Release\AtlasWrapper.pdb
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Release\Newtonsoft.Json.xml
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\obj\Release\AtlasWrapperSampleCS.csprojAssemblyReference.cache
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\obj\Release\AtlasWrapperSampleCS.csproj.CopyComplete
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\obj\Release\AtlasWrapperSampleCS.exe
+C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\obj\Release\AtlasWrapperSampleCS.pdb

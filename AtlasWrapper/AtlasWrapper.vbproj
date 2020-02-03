@@ -8,6 +8,7 @@
     <Product>Albatross-Atlas API Wrapper</Product>
     <Copyright>(c) 2020 Tobias Hattinger</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
