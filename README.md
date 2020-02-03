@@ -1,6 +1,11 @@
 # ALBATROSS-ATLAS API-Wrapper
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+![GitHub](https://img.shields.io/github/license/TobiHatti/Albatross-Atlas-API-Wrapper)
+![GitHub Release Date](https://img.shields.io/github/release-date/TobiHatti/Albatross-Atlas-API-Wrapper)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TobiHatti/Albatross-Atlas-API-Wrapper?include_prereleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/TobiHatti/Albatross-Atlas-API-Wrapper)
+![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/Albatross-Atlas-API-Wrapper)
+![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/Albatross-Atlas-API-Wrapper)
 
 A Simple wrapper-class for the Albatross-Atlas API. Compatible for C# and VB.Net
 
