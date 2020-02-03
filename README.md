@@ -1,11 +1,11 @@
 # ALBATROSS-ATLAS API-Wrapper
 
-![GitHub](https://img.shields.io/github/license/TobiHatti/Albatross-Atlas-API-Wrapper)
-![GitHub Release Date](https://img.shields.io/github/release-date/TobiHatti/Albatross-Atlas-API-Wrapper)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TobiHatti/Albatross-Atlas-API-Wrapper?include_prereleases)
-![GitHub last commit](https://img.shields.io/github/last-commit/TobiHatti/Albatross-Atlas-API-Wrapper)
-![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/Albatross-Atlas-API-Wrapper)
-![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/Albatross-Atlas-API-Wrapper)
+[![GitHub](https://img.shields.io/github/license/TobiHatti/Albatross-Atlas-API-Wrapper)](https://opensource.org/licenses/MIT)
+[![GitHub Release Date](https://img.shields.io/github/release-date/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/releases)
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TobiHatti/Albatross-Atlas-API-Wrapper?include_prereleases)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/issues)
+[![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper)
 
 A Simple wrapper-class for the Albatross-Atlas API. Compatible for C# and VB.Net
 
