@@ -275,7 +275,51 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
     <TestMethod()> Public Sub Drivers_OVRLD1_DefaultUseCase_ExpectResult()
         Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
         Dim result = fetcher.Drivers()
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+#End Region
+#Region "[TEST-METHOD : Refueling]"
+    <TestMethod()> Public Sub Refueling_OVRLD1_DefaultUseCase_DateRange0H_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Refueling(DateTime.Now, DateTime.Now)
         Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub Refueling_OVRLD1_DefaultUseCase_DateRange3H_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Refueling(DateTime.Now.AddHours(-3), DateTime.Now)
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub Refueling_OVRLD1_DefaultUseCase_DateRange24H_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Refueling(DateTime.Now.AddHours(-24), DateTime.Now)
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub Refueling_OVRLD2_DefaultUseCase_AllPast_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Refueling(DateTime.Now.AddHours(-5))
+        Assert.IsNotNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub Refueling_OVRLD2_DefaultUseCase_AllFuture_ExpectNull()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Refueling(DateTime.Now.AddHours(5))
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+    <TestMethod()> Public Sub Refueling_OVRLD2_DefaultUseCase_PastAndFuture_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Refueling(DateTime.Now.AddHours(-1))
+        Assert.IsNotNull(result)
         Assert.AreNotEqual(result, -1)
         If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
     End Sub
