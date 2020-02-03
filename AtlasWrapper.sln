@@ -7,6 +7,8 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AtlasWrapper", "AtlasWrappe
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AtlasWrapperSample", "AtlasWrapperTester\AtlasWrapperSample.vbproj", "{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AtlasWrapperUTest", "AtlasWrapperUTest\AtlasWrapperUTest.vbproj", "{765E7EE4-CBEA-42AB-9DF5-DF6CF422D14C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C15F989-0792-4A68-AAA2-ED98CC5FFE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765E7EE4-CBEA-42AB-9DF5-DF6CF422D14C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765E7EE4-CBEA-42AB-9DF5-DF6CF422D14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765E7EE4-CBEA-42AB-9DF5-DF6CF422D14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765E7EE4-CBEA-42AB-9DF5-DF6CF422D14C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
