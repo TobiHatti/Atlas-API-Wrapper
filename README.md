@@ -1,5 +1,7 @@
 # ALBATROSS-ATLAS API-Wrapper
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
 A Simple wrapper-class for the Albatross-Atlas API. Compatible for C# and VB.Net
 
 __NOTE: You might have to install the Newtonsoft.Json NuGet-Package__
