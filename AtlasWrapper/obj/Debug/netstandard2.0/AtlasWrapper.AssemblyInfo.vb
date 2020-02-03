@@ -13,11 +13,12 @@ Option Explicit On
 
 Imports System
 Imports System.Reflection
-<Assembly: System.Reflection.AssemblyCompanyAttribute("AtlasWrapper"),  _
+<Assembly: System.Reflection.AssemblyCompanyAttribute("Endix Development"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
+ Assembly: System.Reflection.AssemblyCopyrightAttribute("(c) 2020 Tobias Hattinger"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
  Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
- Assembly: System.Reflection.AssemblyProductAttribute("AtlasWrapper"),  _
+ Assembly: System.Reflection.AssemblyProductAttribute("Albatross-Atlas API Wrapper"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("AtlasWrapper"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")> 
 

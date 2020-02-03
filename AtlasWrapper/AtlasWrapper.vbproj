@@ -3,10 +3,22 @@
   <PropertyGroup>
     <RootNamespace>AtlasWrapper</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Tobias Hattinger</Authors>
+    <Company>Endix Development</Company>
+    <Product>Albatross-Atlas API Wrapper</Product>
+    <Copyright>(c) 2020 Tobias Hattinger</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

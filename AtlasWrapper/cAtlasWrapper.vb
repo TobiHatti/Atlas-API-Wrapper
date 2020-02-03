@@ -147,7 +147,7 @@ Public Class AtlasWrapper
     ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data. Time as unix-timestamp expressed in microseconds</param>
     ''' <param name="pLimit">Limit of results, by default 100, up to 1000</param>
     ''' <returns>Dynamic object of the requested data</returns>
-    Public Function TotalHistory(pFromTS As Long, Optional pLimit As Integer = 100) As Object
+    Public Function TotalHistory(pFromTS As Date, Optional pLimit As Integer = 100) As Object
         Return GetApiResponse($"{hostname}/{username}/totalhistory/{pFromTS}/?limit={pLimit}")
     End Function
     ''' <summary>
@@ -156,8 +156,8 @@ Public Class AtlasWrapper
     ''' <param name="pFromTS">Beginning of the period, for which the service has to return the data. Time as unix-timestamp expressed in microseconds</param>
     ''' <param name="pLimit">Limit of results, by default 100, up to 1000</param>
     ''' <returns>Dynamic object of the requested data</returns>
-    Public Function TotalHistoryExtended(pFromTS As Long, Optional pLimit As Integer = 100) As Object
-        Return GetApiResponse($"{hostname}/{username}/totalhistoryextended/{pFromTS}/?limit={pLimit}")
+    Public Function TotalHistoryExtended(pFromTS As Date, Optional pLimit As Integer = 100) As Object
+        Return GetApiResponse($"{hostname}/{username}/totalhistoryextended/{CType(pFromTS.Subtract(New DateTime(1970, 1, 1)).TotalMilliseconds, ULong) * 1000}/?limit={pLimit}")
     End Function
     ''' <summary>
     ''' Retrieves the list of drivers
