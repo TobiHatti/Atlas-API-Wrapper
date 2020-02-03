@@ -271,4 +271,13 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
         If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
     End Sub
 #End Region
+#Region "[TEST-METHOD : Drivers]"
+    <TestMethod()> Public Sub Drivers_OVRLD1_DefaultUseCase_ExpectResult()
+        Dim fetcher As AtlasWrapper.AtlasWrapper = New AtlasWrapper.AtlasWrapper(GPSHost, GPSUser, GPSPass)
+        Dim result = fetcher.Drivers()
+        Assert.IsNull(result)
+        Assert.AreNotEqual(result, -1)
+        If Not result Is Nothing Then Assert.IsFalse(result.ToString().ToLower().StartsWith("e-"))
+    End Sub
+#End Region
 End Class
