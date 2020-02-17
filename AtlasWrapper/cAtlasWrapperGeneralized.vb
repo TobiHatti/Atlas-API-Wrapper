@@ -4,9 +4,8 @@ Imports System.Net
 Imports System.Text
 Imports Newtonsoft.Json
 
-Public Class cAtlasWrapperGeneralized
+Public Class AtlasWrapper
     Private ReadOnly hostname As String
-    Private ReadOnly username As String
     Private ReadOnly password As String
 
     Public Property PasswordPostKey As String = "password"
