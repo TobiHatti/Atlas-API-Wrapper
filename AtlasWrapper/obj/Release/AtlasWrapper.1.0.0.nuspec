@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AtlasWrapper</id>
+    <version>1.0.0</version>
+    <authors>Tobias Hattinger</authors>
+    <owners>Tobias Hattinger</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <description>Package Description</description>
+    <copyright>(c) 2020 Tobias Hattinger</copyright>
+    <repository url="https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="OpenCover" version="4.7.922" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\bin\Release\netstandard2.0\AtlasWrapper.dll" target="lib\netstandard2.0\AtlasWrapper.dll" />
+    <file src="C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\LICENSE" target="LICENSE" />
+  </files>
+</package>
