@@ -1,4 +1,4 @@
-# ALBATROSS-ATLAS API-Wrapper
+# ATLAS API-Wrapper
 
 [![GitHub](https://img.shields.io/github/license/TobiHatti/Albatross-Atlas-API-Wrapper)](https://opensource.org/licenses/MIT)
 [![GitHub Release Date](https://img.shields.io/github/release-date/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/releases)
@@ -7,7 +7,7 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper)
 
-A Simple wrapper-class for the Albatross-Atlas API. Compatible for C# and VB.Net
+A Simple wrapper-class for the Atlas-API. Compatible for C# and VB.Net
 
 __NOTE: You might have to install the Newtonsoft.Json NuGet-Package__
 
