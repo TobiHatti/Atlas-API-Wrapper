@@ -1,3 +1,5 @@
+<img align="right" width="80" height="80" data-rmimg src="https://endev.at/content/projects/Atlas-API-Wrapper/EndevLibs_Logo_128.png">
+
 # ATLAS API-Wrapper
 
 [![GitHub](https://img.shields.io/github/license/TobiHatti/Albatross-Atlas-API-Wrapper)](https://opensource.org/licenses/MIT)
@@ -6,6 +8,8 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper)
+
+![image](https://endev.at/content/projects/Atlas-API-Wrapper/AtlasAPIWrapper_Banner_1080.png)
 
 A Simple wrapper-class for the Atlas-API. Compatible for C# and VB.Net
 
