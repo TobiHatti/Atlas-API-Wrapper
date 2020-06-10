@@ -9,7 +9,7 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/Albatross-Atlas-API-Wrapper)](https://github.com/TobiHatti/Albatross-Atlas-API-Wrapper)
 
-![image](https://endev.at/content/projects/Atlas-API-Wrapper/AtlasAPIWrapper_Banner_1080.png)
+![image](https://endev.at/content/projects/Atlas-API-Wrapper/AtlasAPIWrapper_Banner_300.png)
 
 A Simple wrapper-class for the Atlas-API. Compatible for C# and VB.Net
 
