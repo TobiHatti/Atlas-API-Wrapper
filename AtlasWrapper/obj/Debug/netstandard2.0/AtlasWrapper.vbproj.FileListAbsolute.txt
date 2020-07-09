@@ -14,3 +14,12 @@ C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debu
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.AssemblyInfo.vb
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.dll
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.pdb
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\bin\Debug\netstandard2.0\AtlasWrapper.deps.json
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\bin\Debug\netstandard2.0\AtlasWrapper.dll
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\bin\Debug\netstandard2.0\AtlasWrapper.pdb
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.vbprojAssemblyReference.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.AssemblyInfoInputs.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.AssemblyInfo.vb
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.vbproj.CoreCompileInputs.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.dll
+H:\Git\_AtlasAPIWrapper\AtlasWrapper\obj\Debug\netstandard2.0\AtlasWrapper.pdb

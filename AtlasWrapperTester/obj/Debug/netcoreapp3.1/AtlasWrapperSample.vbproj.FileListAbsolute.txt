@@ -13,3 +13,9 @@ C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bi
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapper.dll
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\bin\Debug\netcoreapp3.1\AtlasWrapper.pdb
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.vbproj.CopyComplete
+H:\Git\_AtlasAPIWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.vbprojAssemblyReference.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.AssemblyInfoInputs.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.AssemblyInfo.vb
+H:\Git\_AtlasAPIWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.vbproj.CoreCompileInputs.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.dll
+H:\Git\_AtlasAPIWrapper\AtlasWrapperTester\obj\Debug\netcoreapp3.1\AtlasWrapperSample.pdb

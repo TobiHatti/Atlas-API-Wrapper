@@ -22,3 +22,10 @@ C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperUTest\obj
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.pdb
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperUTest\bin\Debug\Newtonsoft.Json.dll
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperUTest\bin\Debug\Newtonsoft.Json.xml
+H:\Git\_AtlasAPIWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.vbprojAssemblyReference.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.Resources.resources
+H:\Git\_AtlasAPIWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.vbproj.GenerateResource.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.vbproj.CoreCompileInputs.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.dll
+H:\Git\_AtlasAPIWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.xml
+H:\Git\_AtlasAPIWrapper\AtlasWrapperUTest\obj\Debug\AtlasWrapperUTest.pdb

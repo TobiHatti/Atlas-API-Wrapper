@@ -133,26 +133,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zivi\\.nuget\\packages\\": {},
+    "C:\\Users\\Tobias\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperSample.vbproj",
+      "projectUniqueName": "H:\\Git\\_AtlasAPIWrapper\\AtlasWrapperTester\\AtlasWrapperSample.vbproj",
       "projectName": "AtlasWrapperSample",
-      "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\AtlasWrapperSample.vbproj",
-      "packagesPath": "C:\\Users\\zivi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapperTester\\obj\\",
+      "projectPath": "H:\\Git\\_AtlasAPIWrapper\\AtlasWrapperTester\\AtlasWrapperSample.vbproj",
+      "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
+      "outputPath": "H:\\Git\\_AtlasAPIWrapper\\AtlasWrapperTester\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\zivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+        "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -160,15 +159,14 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapper\\AtlasWrapper.vbproj": {
-              "projectPath": "C:\\Users\\zivi\\Desktop\\Projects (GIT)\\AlbatrossAtlasWrapper\\AtlasWrapper\\AtlasWrapper.vbproj"
+            "H:\\Git\\_AtlasAPIWrapper\\AtlasWrapper\\AtlasWrapper.vbproj": {
+              "projectPath": "H:\\Git\\_AtlasAPIWrapper\\AtlasWrapper\\AtlasWrapper.vbproj"
             }
           }
         }
@@ -202,7 +200,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

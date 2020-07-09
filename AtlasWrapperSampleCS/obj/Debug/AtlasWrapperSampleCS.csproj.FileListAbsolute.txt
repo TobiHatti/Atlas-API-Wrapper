@@ -9,3 +9,7 @@ C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\obj\Debug\AtlasWrapperSampleCS.pdb
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Debug\Newtonsoft.Json.dll
 C:\Users\zivi\Desktop\Projects (GIT)\AlbatrossAtlasWrapper\AtlasWrapperSampleCS\bin\Debug\Newtonsoft.Json.xml
+H:\Git\_AtlasAPIWrapper\AtlasWrapperSampleCS\obj\Debug\AtlasWrapperSampleCS.csprojAssemblyReference.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperSampleCS\obj\Debug\AtlasWrapperSampleCS.csproj.CoreCompileInputs.cache
+H:\Git\_AtlasAPIWrapper\AtlasWrapperSampleCS\obj\Debug\AtlasWrapperSampleCS.exe
+H:\Git\_AtlasAPIWrapper\AtlasWrapperSampleCS\obj\Debug\AtlasWrapperSampleCS.pdb
